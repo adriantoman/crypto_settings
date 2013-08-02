@@ -8,7 +8,6 @@ if [[ "$REMOTE" == */ms_projects* ]]; then
     git config diff.openssl.textconv crypto/diff_filter_openssl
     git config diff.openssl.cachetextconv true
 
-    chmod a+x crypto/*
 else
   cat <<EOF 
   o              o        o           o__ __o         o          o   __o__   o          o        o__ __o     
