@@ -1,5 +1,5 @@
 REMOTE=`git config remote.origin.url`
-if [[ "$REMOTE" == *ms_projects.git* ]]; then
+if [[ "$REMOTE" == */ms_projects* ]]; then
     read -p "Please insert git encryption password located in PassWord Manager git-crypto resource: " PASSWORD
     echo "$PASSWORD" > ~/.ssh/git_pass
 
