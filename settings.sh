@@ -6,6 +6,7 @@ if [[ "$REMOTE" == *ms_projects.git* ]]; then
     git config filter.openssl.clean crypto/clean_filter_openssl
     git config filter.openssl.smudge crypto/smudge_filter_openssl
     git config diff.openssl.textconv crypto/diff_filter_openssl
+    git config diff.openssl.cachetextconv true
 
     chmod a+x crypto/*
 else
