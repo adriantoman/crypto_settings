@@ -7,6 +7,8 @@ if [[ "$REMOTE" == */ms_projects* ]]; then
     git config filter.openssl.smudge crypto/smudge_filter_openssl
     git config diff.openssl.textconv crypto/diff_filter_openssl
     git config diff.openssl.cachetextconv true
+    
+    echo "CHANGES SUCCESSFULLY APPLIED"
 
 else
   cat <<EOF 
